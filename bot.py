@@ -19,9 +19,9 @@ class Bot(Client):
     def __init__(self):
         super().__init__(
             name="WebX-Renamer",
-            api_id=API_ID,
-            api_hash=API_HASH,
-            bot_token=BOT_TOKEN,
+            api_id=29943848,
+            api_hash=43953a2e9967683decfe979f2ede27e0,
+            bot_token=6547990933:AAHFMjvW76QPAS_EpaFJFQIYhWe3yMx3E1U,
             workers=50,
             plugins={"root": "plugins"},
             sleep_threshold=5,
@@ -32,7 +32,7 @@ class Bot(Client):
        me = await self.get_me()
        self.mention = me.mention
        self.username = me.username 
-       self.force_channel = FORCE_SUB
+       self.force_channel = AJRMOVIES
        if FORCE_SUB:
          try:
             link = await self.export_chat_invite_link(FORCE_SUB)                  
